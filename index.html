@@ -1,0 +1,139 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0" />
+	<meta name="format-detection" content="telephone=no">
+
+	<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">	
+	<link rel="stylesheet" href="style.css">	
+	<link href='https://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
+
+	<title>Céline Chen</title>
+
+	<script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://npmcdn.com/flickity@1.2/dist/flickity.min.css">
+
+</head>
+
+<body>
+	<section class="full pink">
+		<div class="container-fluid">
+			<img src="resources/CC.jpg" class="img-circle">
+			<h1>Céline Chen</h1>
+			<h3>Engineering student</h3>
+			<h5>Media Technology enthusiast - UX/UI - 3D graphism</h5> <br />
+			<p>
+				<h2>
+					<a href="mailto:celinec@kth.se"><span class="glyphicon glyphicon-envelope"></span></a>
+				</h2>
+			</p>
+		</div>
+	</section>
+
+	<section class="full blue">
+		<div class="row flex-row">
+			<div class="col-md-6 col-xs-12 col-sm-12 col-lg-6">
+				<p>
+					<h1>pinglr</h1>
+					<h5>google maps API | jquery | webapp design</h5>
+				</p>
+
+				<p class="description">
+					This is a mapstr-inspired web application optimized for iOS devices, where the user can pin their favourite places on their personal map. <br />
+					Features include geolocalization, custom controls on the map, switching roadmap to satellite view and 45° tilt. <br />
+					The user can edit the name, the color of the marker, and the description of each pin. It's also possible to move the pin by dragging it to a desired localization.
+				</p>
+				<p class="details">
+					<span class="glyphicon glyphicon-calendar"></span> April 2016 <br />
+					<span class="glyphicon glyphicon-time"></span> 1 week
+				</p>
+			</div>
+
+			<div class="col-md-6 col-xs-12 col-sm-12 col-lg-6 expand-height">
+				<div class="carousel height-first">
+					<div class="carousel-cell"><img src="pinglr/0.png" class="hImg"></div>
+					<div class="carousel-cell"><img src="pinglr/1.png" class="hImg"></div>
+					<div class="carousel-cell"><img src="pinglr/2.png" class="hImg"></div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="full tangerine">
+		<div class="container-fluid no-extra">
+			<div class="row">
+				<div class="col-md-12 col-xs-12 col-sm-12 col-lg-12">
+					<p>
+					<br />
+						<h1>Planner</h1>
+						<h5>bootstrap | jquery UI</h5>
+					</p>
+					<p class="description">
+						This is a web planner application that my friend and I developped for our Interaction Programming class. <br />
+						Functionnalities include day/event creation and editing, with a specific name, duration, description and category. The user can also change the order of days or events by drag and dropping them. <br />
+						We paid special attention to the website's architecture (using the MVC model), but we mainly focused on design and user interaction.
+					</p>
+					<p class="details">
+						<span class="glyphicon glyphicon-calendar"></span> March 2016 <br />
+						<span class="glyphicon glyphicon-time"></span> 2 weeks
+					</p>
+				</div>
+			</div>
+			<div class="row flex-row expand-width">
+				<div class="col-md-12 col-xs-12 col-lg-12 expand-height">
+					<div class="carousel width-first">
+						<div class="carousel-cell"><img src="planner/0.png" class="wImg"></div>
+						<div class="carousel-cell"><img src="planner/1.png" class="wImg"></div>
+						<div class="carousel-cell"><img src="planner/2.png" class="wImg"></div>
+						<div class="carousel-cell"><img src="planner/3.png" class="wImg"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="full lilac">
+		<div class="container">
+			<h1>VIC Studio Dataviz</h1>
+			<h3>d3.js | jquery</h3>
+		</div>
+	</section>
+
+	<section class="full blue">
+		<div class="container">
+			<h1>Pathicular</h1>
+			<h3>google maps API | d3.js | jquery</h3>
+		</div>
+	</section>
+
+	<section class="full pink">
+		<div class="container">
+			<a href="https://fr.linkedin.com/in/celineyiweichen" target="_blank"><h1>Linkedin</h1></a>
+		</div>
+	</section>
+
+	<script src="https://npmcdn.com/flickity@1.2/dist/flickity.pkgd.min.js"></script>
+
+	<script>
+	$(".carousel").flickity({"wrapAround": true,"setGallerySize":false});
+
+		$(window).resize(function() {
+			var h = $(window).height();
+			var w = $(window).width();
+			$(".full").attr("style","min-height: " + h + "px; width: " + w + "px;");
+			$("#about").attr("style","height: " + h/3 + "px; width: " + w + "px;");
+			$(".carousel").flickity("resize");
+		});
+
+		$(window).resize();
+
+	</script>
+
+</body>
+</html>
