@@ -33,7 +33,7 @@ a:hover {
 h1 {
 	font-family: 'Baskerville';
 	letter-spacing: -.05em;
-	font-size: 7vh;
+	font-size: 5vw;
 }
 h3, h4, h5, h6 {
 	text-transform: uppercase;
@@ -107,6 +107,12 @@ h3, h4, h5, h6 {
 /* CAROUSEL */
 
 @media only screen and (max-width: 640px) { /* FOR SMALL DEVICES */
+	h1 {
+		font-size: 20vw;
+	}
+	.name {
+		font-size: 15vw !important;
+	}
 	.no-extra {
 		padding: 0 !important;
 		margin: 0 !important;
@@ -129,7 +135,7 @@ h3, h4, h5, h6 {
 	}
 	.width-first {
 		width: 100vw;
-		height: 35vh;
+		height: 45vh;
 	}
 	.carousel-cell {
 		width: 100%;
@@ -152,6 +158,7 @@ h3, h4, h5, h6 {
 	.flex-row {
 		min-height: 100%; 
 		height: 100%; 
+		width: 100%;
 		display: flex; 
 		align-items: center;
 	}
